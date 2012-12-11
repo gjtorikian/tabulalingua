@@ -1,12 +1,10 @@
 !!! 5
 
--var codeHighlightTheme = manifest.codeHighlightTheme || 'github'
-
 html
 	head
 		meta(http-equiv="content-type", content="text/html", charset="utf-8")
 		
-		title #{options.title}
+		title #{title}
 		
 		link(type="text/css", rel="stylesheet", href="./assets/css/bootstrap.css")
 		link(type="text/css", rel="stylesheet", href="http://yandex.st/highlightjs/6.1/styles/#{codeHighlightTheme}.min.css")
@@ -15,7 +13,7 @@ html
 		div.container
 			div.hero-unit
 				p 
-					!= markdown("Inspired very much by [this rant](http://search.cpan.org/dist/Locale-Maketext/lib/Locale/Maketext/TPJ13.pod#A_Localization_Horror_Story:_It_Could_Happen_To_You), with inspiration from my significant other (who is an ES-MX translator, among other things), and listening to the grief of many translators in many languages, I decided to make a chart that attempts to consolidate various linguistic rules, and how they ought to be represented.").html
+					!= markdown("Inspired very much by [this rant](http://search.cpan.org/dist/Locale-Maketext/lib/Locale/Maketext/TPJ13.pod#A_Localization_Horror_Story:_It_Could_Happen_To_You), with help from my significant other (who is an ES-MX translator, among other things), and listening to the grief of many translators in many languages, I decided to make a chart that attempts to consolidate various linguistic rules, and how they ought to be represented.").html
 				p 
-					!= markdown("My hope is that programmers the world over will consult this table when designing their applications, and, once and for all, stop an end to poorly translated software.").html
+					!= markdown("My hope is that programmers the world over will consult this table when designing their applications, and, once and for all, put an end to poorly translated software.").html
 		!= content
